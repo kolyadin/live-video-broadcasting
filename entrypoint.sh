@@ -12,7 +12,7 @@ fi
 
 LANGUAGE="${LANGUAGE:-en}"
 V_BITRATE="${V_BITRATE:-3000k}"
-A_BITRATE="${A_BITRATE:-256k}"
+A_BITRATE="${A_BITRATE:-128k}"
 
 sudo /etc/init.d/dbus start > /dev/null 2>&1
 
