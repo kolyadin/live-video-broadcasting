@@ -1,13 +1,15 @@
 # About
 
-This container is grabbing web page via google chrome and transcode it with ffmpeg in rtmp video stream
+This container is grabbing web page (picture + audio) using web browser and transcode it in rtmp video stream. 
 
 ### How to use
 
 ```bash
 $ docker run -it --rm \
       -e GRAB_URL="https://lenta.ru" \
-      -e RTMP_URL="rtmp://a.rtmp.youtube.com/live2/qvu0-zc7h-2qc0-7au9" \
+      -e RTMP_URL="rtmp://a.rtmp.youtube.com/live2/yke7-5efb-vkbq-d7rz" \
       -e LANGUAGE="en" \
+      -e V_BITRATE="2500K" \
+      -e A_BITRATE="256K" \
       kolyadin/live-video-broadcasting
 ```
