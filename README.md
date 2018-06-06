@@ -1,3 +1,7 @@
+![alt text](https://img.shields.io/docker/automated/kolyadin/live-video-broadcasting.svg)
+![alt text](https://img.shields.io/docker/build/kolyadin/live-video-broadcasting.svg)
+![alt text](https://img.shields.io/docker/pulls/kolyadin/live-video-broadcasting.svg)
+
 # About
 
 This container is grabbing web page (picture + audio) using web browser and transcode it in rtmp video stream. 
