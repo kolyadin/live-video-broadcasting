@@ -11,13 +11,14 @@ This container is grabbing web page (picture + audio) using web browser and tran
 Tech specs:  
 https://support.google.com/youtube/answer/2853702?hl=en
 ```bash
-$ docker run -it --rm \
+$ docker run -it \
+      -v $(pwd)/siski:/var/hls \
       -e GRAB_URL="https://www.youtube.com/watch?v=hUj65M4T1cg" \
       -e RTMP_URL="rtmp://a.rtmp.youtube.com/live2/0987-6543-2109-8765" \
       -e LANGUAGE="en" \
       -e V_BITRATE="3000K" \
       -e A_BITRATE="128K" \
-      kolyadin/live-video-broadcasting
+      kolyadin/live-video-broadcasting:hls
 ```
 
 #### Twitch.tv
